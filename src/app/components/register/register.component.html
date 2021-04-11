@@ -1,0 +1,54 @@
+<main class="form-signin">
+  <form [formGroup]="registerForm">
+    <h1 class="h3 mb-3 fw-normal">Please Register</h1>
+    <div class="form-floating">
+      <input
+        formControlName="firstname"
+        type="text"
+        class="form-control"
+        id="firstname"
+        placeholder="Enter your firstname"
+      />
+      <label for="firstname">Firstname</label>
+    </div>
+    <div class="form-floating">
+      <input
+        formControlName="lastname"
+        type="text"
+        class="form-control"
+        id="lastname"
+        placeholder="Enter your lastname"
+      />
+      <label for="lastname">Lastname</label>
+    </div>
+    <div class="form-floating">
+      <input
+        formControlName="email"
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="name@example.com"
+      />
+      <label for="email">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input
+        formControlName="password"
+        type="password"
+        class="form-control"
+        id="password"
+        placeholder="Password"
+      />
+      <label for="password">Password</label>
+    </div>
+    <div class="checkbox mb-3"></div>
+    <button (click)="register()" class="w-100 btn btn-lg btn-primary">
+      Register
+    </button>
+  </form>
+  <div class="mt-2 text-center">
+    <label>
+      <a routerLink="/login">Login</a>
+    </label>
+  </div>
+</main>

@@ -1,0 +1,39 @@
+<main class="form-signin">
+  <form [formGroup]="loginForm">
+    <h1 class="text-center h3 mb-3 fw-normal">Please sign in</h1>
+    <div class="form-floating">
+      <input
+        formControlName="email"
+        type="email"
+        class="form-control"
+        id="floatingInput"
+        placeholder="name@example.com"
+      />
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input
+        formControlName="password"
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Password"
+      />
+      <label for="floatingPassword">Password</label>
+    </div>
+    <button (click)="login()" class="w-100 btn btn-lg btn-primary m">
+      Sign in
+    </button>
+  </form>
+
+  <div class="mt-2 text-center">
+    <label>
+      <a routerLink="/register">Register</a>
+    </label>
+  </div>
+  <div class="mt-2 text-center">
+    <label>
+      <a routerLink="/forgotPassword">Forgot Password?</a>
+    </label>
+  </div>
+</main>
